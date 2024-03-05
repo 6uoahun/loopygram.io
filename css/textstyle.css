@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* 텍스트 속성을 통일시키기 위한 css */
+.m_text {
+    /* 중간크기 텍스트 속성*/
+    font-weight: 800;
+    font-size: 14px;
+
+}
+
+.s_text {
+    /* 작은크기 텍스트 속성*/
+    font-size: 12px;
+}
+
+
+body {
+    background-color: #fafafa;
+}
+
+article {
+    width: 614px;
+    border: 1px solid #00000034;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: white;
+    
+}
+
+header {
+    display: flex;
+    padding: 10px 20px;
+}
+
+header .profileImg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* margin: 0 10px 0 0; */  
+    margin-right: 10px;
+}
+
+/* 이미지 크기 맞추기*/
+.img_section img{
+    width: 100%;
+    padding: 1px;
+}
+
+.icon {
+    padding-left: 15px;
+    position: relative;
+}
+
+.icon>img {
+    width: 30px;
+    margin: 0 2px;
+}
+
+.icon img:nth-child(4)
+{   position: absolute; /* 이것만 옮길 것 */
+    right: 10px; /* 오른쪽에서 10px 떨어진 지점에서부터*/
+
+}
+
+.likes {
+    padding: 10px 20px;
+}
+
+.contents {
+    padding: 0 20px;
+}
+
+.time {
+    margin: 10px 20px ;
+    color: rgb(136, 133, 133);
+}
+
+/* time과 comment 사이에 줄을 긋고 싶다! 
+= time 바닥테두리 or comment 천장테두리 */
+.comment {
+    border-top: 1px solid #00000034;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.comment>input {
+    width: 50%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 5px 
+    ;
+}
+
+/*게시 버튼 자리에 들어감. 글자색 파란색으로 바꾸고 두껍게, 가운데에 오게. 마우스 올렸을 때 배경과 글자색 반전*/
+.comment>p {
+    align-self: center;
+    color: rgb(85, 107, 173); 
+    font-weight: 900;
+    margin-right: 10px;
+    opacity: 0.6; /* 투명도만 설정하는 속성! */
+    padding: 5px;
+
+    border-radius: 5px;
+    
+    
+}
+
+.comment>p:hover {
+    background-color: #7d7d7d;
+    color: #ffffff;
+    opacity: 1.0 ; /* 투명도만 설정하는 속성! */
+
+}
